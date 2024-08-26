@@ -1,4 +1,4 @@
-#include "../CLASSES/CARS/CARS_CLASS_INTERFACE.h"
+#include "CARS_CLASS_INTERFACE.h"
 
 int main() {
   Car car01;
