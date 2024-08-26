@@ -32,10 +32,4 @@ int Car::getYear() {
   return year;
 }
 
-Car::Car() {
 
-}
-
-Car::~Car() {
-  
-}
