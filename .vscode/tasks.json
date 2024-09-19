@@ -1,5 +1,36 @@
 {
+  "version": "2.0.0",
   "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+          "-I", "include",
+          "-o", "outputFile",
+          "src/main.cpp",
+          "src/Complex/Complex.cpp"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/CH01_EX01_OOP_MAHARATECH"  // Set this to your project directory
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Generated task by VS Code"
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "${workspaceFolder}/CH01_EX01_OOP_MAHARATECH/outputFile", // Adjust the path if necessary
+      "group": "none",
+      "options": {
+        "cwd": "${workspaceFolder}/CH01_EX01_OOP_MAHARATECH" // Set working directory to project folder
+      },
+      "detail": "Run the output executable"
+    },
     {
       "type": "cppbuild",
       "label": "C/C++: g++ build active file",
@@ -51,6 +82,5 @@
       },
       "detail": "compiler: C:\\PATH_PROGRAMS\\bin\\g++.exe"
     }
-  ],
-  "version": "2.0.0"
+  ]
 }
