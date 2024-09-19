@@ -13,7 +13,7 @@ public:
     Complex(float r);           // 1 Parameter Constructor
     Complex(float r, float i);  // 2 Parameters Constructor
     ~Complex();                 // Destructor
-    void setComplex(float r, float, i);
+    void setComplex(float r, float i);
 
     // Setter and Getter Functions
     void    setReal(float);     // Set the real part
