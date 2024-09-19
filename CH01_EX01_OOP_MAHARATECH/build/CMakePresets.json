@@ -6,11 +6,11 @@
       "description": "Default settings for the CMake Project",
       "hidden": false,
       "generator": "Ninja",
-      "binaryDir": "${workspaceFolder}/CH01_EX01_OOP_MAHARATECH/build",
+      "binaryDir": "CH01_EX01_OOP_MAHARATECH/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
-        "CMAKE_CXX_STANDARD": "20"
+        "CMAKE_CXX_STANDARD": "17"
       }
     }
   ]
