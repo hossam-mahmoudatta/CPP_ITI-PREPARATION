@@ -19,6 +19,10 @@ public:
 
     float getImag();      // Get the imaginary part
 
+    Complex add(Complex c);   // Add two complex numbers
+
+    Complex sub(Complex c);    // Subtract two complex numbers
+
     void print();         // Print the complex number
 
     // Function to add two Complex numbers

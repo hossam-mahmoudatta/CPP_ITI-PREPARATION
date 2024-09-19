@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
   Complex c1;
-  c1.setReal(3);
-  c1.setImag(5);
+  c1.setReal(6);
+  c1.setImag(-3);
 
   c1.print();
 
