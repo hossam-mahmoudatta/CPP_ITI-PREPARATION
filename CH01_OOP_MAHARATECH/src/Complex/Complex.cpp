@@ -4,6 +4,46 @@
 
 using namespace std;
 
+// Initialize the static member (outside the class definition)
+int Complex::counter = 0;
+
+// Constructors
+
+// No Parameter Constructor
+Complex::Complex() {
+    counter++;
+    cout << endl << "Default constructor called!" << endl;
+}
+
+// 1 Parameter Constructor
+Complex::Complex(float r) {
+    counter++;
+    cout << endl << "One Parameter constructor called!" << endl;
+}
+
+// 2 Parameter Constructor
+Complex::Complex(float r, float i) {
+    counter++;
+    cout << endl << "Two Parameter constructor called!" << endl;
+}
+
+// Destructor
+Complex::~Complex() {
+    counter--;
+    cout << endl << "Destructor called!" << endl;
+}
+
+// Reads the value of the static counter
+int Complex::getCounter() {
+    return counter;
+}
+
+// set the Complex Object
+void Complex::setComplex(float r, float i) {
+    real = r;
+    imag = i;
+}
+
 // Set the real part of the complex number
 void Complex::setReal(float r) {
     real = r;

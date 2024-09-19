@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "default",
+      "description": "Default settings for the CMake Project",
+      "hidden": false,
+      "generator": "Ninja",
+      "binaryDir": "CH01_OOP_MAHARATECH/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+        "CMAKE_CXX_STANDARD": "17"
+      }
+    }
+  ]
+}

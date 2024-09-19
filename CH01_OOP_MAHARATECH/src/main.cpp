@@ -15,11 +15,17 @@ int main() {
   c1.print();
   c2.print();
 
-  c3 = c1.add(c2);
+  cout << endl << "Number of Counter objects: " << Complex::getCounter() << endl;
+
+  c3 = c1.add(c2); // This will create a temp object, so a constructor is called
   c3.print();
 
-  c3 = c1.sub(c2);
+  cout << endl << "Number of Counter objects: " << Complex::getCounter() << endl;
+
+  c3 = c1.sub(c2); // This will create a temp object, so a constructor is called
   c3.print();
+
+  cout << endl << "Number of Counter objects: " << Complex::getCounter() << endl;
 
   return 0;
 }
